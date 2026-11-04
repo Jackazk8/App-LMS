@@ -1,0 +1,1317 @@
+[
+  {
+    "id": "c_color",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_amarillo",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_rojo",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_azul",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_verde",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_arananjado",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 200
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_rosa",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_morado",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_cafe",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_negro",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_blanco",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.stages": {
+        "antes": 4,
+        "despues": 3
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.7,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_gris",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_claro",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_oscuro",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_brillante",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_oro",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_dorado",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_plata",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  },
+  {
+    "id": "c_bronce",
+    "cambios": {
+      "validation.phasePositionTolerance": {
+        "antes": null,
+        "despues": 0.9
+      },
+      "validation.minMotionMs": {
+        "antes": null,
+        "despues": 250
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.15,
+        "despues": 1.1
+      },
+      "validation.motionSamples": {
+        "antes": 2,
+        "despues": 3
+      },
+      "validation.motionNoise": {
+        "antes": 0.03,
+        "despues": 0.035
+      },
+      "validation.stages": {
+        "antes": 4,
+        "despues": 3
+      },
+      "validation.minDisplacement": {
+        "antes": 0.12,
+        "despues": 0.14
+      },
+      "validation.pathTolerance": {
+        "antes": 0.6,
+        "despues": 0
+      },
+      "validation.phaseValidation": {
+        "antes": null,
+        "despues": true
+      },
+      "tolerance.meanFlex": {
+        "antes": 60,
+        "despues": 50
+      },
+      "tolerance.shape": {
+        "antes": 0.85,
+        "despues": 0.65
+      },
+      "tolerance.stability": {
+        "antes": 0.75,
+        "despues": 0.2
+      },
+      "tolerance.maxFlex": {
+        "antes": 115,
+        "despues": 100
+      },
+      "tolerance.endHoldMs": {
+        "antes": 140,
+        "despues": 200
+      },
+      "tolerance.minAttemptMs": {
+        "antes": 600,
+        "despues": 1100
+      },
+      "tolerance.startHoldMs": {
+        "antes": 120,
+        "despues": 350
+      },
+      "tolerance.minMotionRatio": {
+        "antes": 0.12,
+        "despues": 0.3
+      }
+    }
+  }
+]

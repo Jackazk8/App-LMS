@@ -10,12 +10,16 @@ public final class WordStagePlan {
         public final List<WordPracticeEngine.Frame> alternatives;
         public final WordPracticeEngine.Frame center;
         Goal(Kind kind,List<WordPracticeEngine.Frame> keys,int index,int lo,int hi) {
+            this(kind,keys,index,lo,hi,false);
+        }
+        Goal(Kind kind,List<WordPracticeEngine.Frame> keys,int index,int lo,int hi,boolean broadPhases) {
             this.kind=kind;center=keys.get(index);
             List<WordPracticeEngine.Frame> window=new ArrayList<>();
             // Aceptar una postura vecina, sin permitir que desaparezca una segunda mano requerida.
-            for(int i=Math.max(lo,index-1);i<=Math.min(hi,index+1);i++)
+            for(int i=broadPhases?lo:Math.max(lo,index-1);i<=(broadPhases?hi:Math.min(hi,index+1));i++)
                 if(keys.get(i).hands.keySet().equals(center.hands.keySet()) &&
-                    Math.abs(keys.get(i).timeMs-center.timeMs)<=(kind==Kind.MOTION?500:300))window.add(keys.get(i));
+                    (broadPhases?(kind==Kind.MOTION || poseDifference(center,keys.get(i))<=.45):
+                    Math.abs(keys.get(i).timeMs-center.timeMs)<=(kind==Kind.MOTION?500:300)))window.add(keys.get(i));
             alternatives=Collections.unmodifiableList(window);
         }
     }
@@ -34,6 +38,9 @@ public final class WordStagePlan {
     }
     public final List<Goal> goals;
     public WordStagePlan(List<WordPracticeEngine.Frame> keys,int stages) {
+        this(keys,stages,false);
+    }
+    public WordStagePlan(List<WordPracticeEngine.Frame> keys,int stages,boolean broadPhases) {
         if(keys.size()<4 || stages<3 || stages>6)throw new IllegalArgumentException("Referencia o número de etapas inválido");
         stages=Math.min(stages,keys.size());
         int last=keys.size()-1;
@@ -78,12 +85,12 @@ public final class WordStagePlan {
             break;
         }
         List<Goal> out=new ArrayList<>();
-        out.add(new Goal(Kind.START,keys,0,0,Math.min(1,chosen[0]-1)));
+        out.add(new Goal(Kind.START,keys,0,0,Math.min(1,chosen[0]-1),broadPhases));
         for(int j=0;j<middles;j++) {
             int lo=j==0?1:chosen[j-1]+1,hi=j==middles-1?last-1:chosen[j+1]-1;
-            out.add(new Goal(j%2==1?Kind.POSE:Kind.MOTION,keys,chosen[j],lo,hi));
+            out.add(new Goal(j%2==1?Kind.POSE:Kind.MOTION,keys,chosen[j],lo,hi,broadPhases));
         }
-        out.add(new Goal(Kind.END,keys,last,Math.max(last-1,chosen[middles-1]+1),last));
+        out.add(new Goal(Kind.END,keys,last,Math.max(last-1,chosen[middles-1]+1),last,broadPhases));
         goals=Collections.unmodifiableList(out);
     }
 }

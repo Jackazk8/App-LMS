@@ -1,0 +1,11 @@
+app/src/main/java/com/mechrobotix/aprendels/Esp32BluetoothClient.kt:140:64: warning: the corresponding parameter in the supertype 'BluetoothGattCallback' is named 'd'. This may cause problems when calling this function with named arguments.
+                override fun onDescriptorWrite(g:BluetoothGatt,descriptor:BluetoothGattDescriptor,status:Int) {
+                                                               ^^^^^^^^^^
+PASS búsqueda BLE por UUID y detención del escaneo
+PASS dos sesiones GATT, nombres iguales y datos separados
+PASS pérdidas, paquete inválido y duplicados por mano
+PASS dirección duplicada y reinicio aislado
+PASS desconexión y fallos de servicio/suscripción sin afectar la otra mano
+PASS cancelación, callbacks antiguos, token obsoleto y pérdida de enlace
+PASS BIN20 de firmware: longitud, little-endian, signos, escalas y uint32
+PASS calibraciones independientes, reinicio por mano y rechazo de movimiento

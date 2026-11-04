@@ -1,0 +1,5 @@
+PASS catálogo: Saludos y despedidas=10, Familia=33, Colores=19, Números=0
+PASS recursos explícitos y actividades del manifiesto
+PASS integridad por SHA-256 de 62 videos, modelo y detecciones
+PASS UUID BLE, BIN20 de 20 bytes y retiro de compatibilidad SPP sin llamadas
+Pendiente: compilación Android y pruebas físicas de cámara/ESP32.

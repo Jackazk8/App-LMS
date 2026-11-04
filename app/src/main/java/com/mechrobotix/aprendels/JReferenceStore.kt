@@ -31,7 +31,7 @@ object JReferenceStore {
         val af=file(context)
         if(!af.baseFile.exists()) return@runCatching null
         val source=JSONObject(af.openRead().bufferedReader().use { it.readText() }).getString("source")
-        listOf(R.raw.letra_j,R.raw.letra_j).firstOrNull { fingerprint(context,it)==source }
+        R.raw.letra_j.takeIf { fingerprint(context,it)==source }
     }.getOrNull()
     fun validate(frames:List<Frame>):List<JPracticeEngine.Sample> {
         require(frames.size>=12) { "Selecciona al menos 1.1 segundos de recorrido" }

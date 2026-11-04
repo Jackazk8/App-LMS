@@ -15,9 +15,8 @@ import java.util.UUID
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
-// Se conserva el nombre del tipo para los puntos de llamada existentes.
-// En BLE el dispositivo descubierto no necesita estar emparejado.
-data class PairedBluetoothDevice(val name:String,val address:String,val device:BluetoothDevice)
+// Un sensor descubierto por BLE no necesita estar emparejado en Ajustes.
+data class BleSensorDevice(val name:String,val address:String,val device:BluetoothDevice)
 enum class SensorHand(val label:String) { LEFT("Mano izquierda"), RIGHT("Mano derecha") }
 data class BmiConnectionState(
     val connected:Boolean, val connecting:Boolean, val name:String?, val address:String?,
@@ -52,14 +51,6 @@ object Esp32BluetoothClient {
         BmiConnectionState(s.connected,s.connecting,s.name,s.address,s.latest,
             s.received,s.missed,s.invalid,s.epoch,s.status)
     }
-    val isConnected:Boolean get()=state(SensorHand.RIGHT).connected
-    val connectedName:String? get()=state(SensorHand.RIGHT).name
-    val latestSample:Bmi160Sample? get()=state(SensorHand.RIGHT).sample
-    val receivedPackets:Long get()=state(SensorHand.RIGHT).received
-    val missedPackets:Long get()=state(SensorHand.RIGHT).missed
-    val invalidPackets:Long get()=state(SensorHand.RIGHT).invalid
-    val streamEpoch:Long get()=state(SensorHand.RIGHT).epoch
-    val connectionStatus:String get()=state(SensorHand.RIGHT).status
     fun requiredPermissions():Array<String> = when {
         Build.VERSION.SDK_INT>=31 -> arrayOf(Manifest.permission.BLUETOOTH_SCAN,Manifest.permission.BLUETOOTH_CONNECT)
         Build.VERSION.SDK_INT>=23 -> arrayOf(Manifest.permission.ACCESS_FINE_LOCATION)
@@ -74,22 +65,15 @@ object Esp32BluetoothClient {
         (context.getSystemService(Context.BLUETOOTH_SERVICE) as? BluetoothManager)?.adapter
     fun isBluetoothEnabled(context:Context)=hasBluetoothConnectPermission(context) && getBluetoothAdapter(context)?.isEnabled==true
 
-    /** Compatibilidad de compilacion solamente. Usa startScan para descubrir los C3 sin bond. */
-    fun listPairedDevices(context:Context):List<PairedBluetoothDevice> {
-        if(!hasBluetoothConnectPermission(context))return emptyList()
-        return getBluetoothAdapter(context)?.bondedDevices.orEmpty()
-            .filter { it.type==BluetoothDevice.DEVICE_TYPE_LE || it.type==BluetoothDevice.DEVICE_TYPE_DUAL }
-            .map { PairedBluetoothDevice(it.name ?: "BLE",it.address,it) }
-    }
     /** El llamador detiene el escaneo al cerrar el selector o al cumplirse su plazo. */
-    fun startScan(context:Context,onDevice:(PairedBluetoothDevice)->Unit,onError:(String)->Unit):()->Unit {
+    fun startScan(context:Context,onDevice:(BleSensorDevice)->Unit,onError:(String)->Unit):()->Unit {
         if(!hasBlePermissions(context))throw SecurityException("Faltan permisos de búsqueda BLE")
         val scanner=getBluetoothAdapter(context)?.bluetoothLeScanner ?: throw IOException("Activa Bluetooth")
         val callback=object:ScanCallback() {
             override fun onScanResult(callbackType:Int,result:ScanResult) {
                 try {
                     val d=result.device
-                    onDevice(PairedBluetoothDevice(result.scanRecord?.deviceName ?: d.name ?: "LSM BLE",d.address,d))
+                    onDevice(BleSensorDevice(result.scanRecord?.deviceName ?: d.name ?: "LSM BLE",d.address,d))
                 }catch(_:SecurityException){onError("Permiso Bluetooth revocado")}
             }
             override fun onBatchScanResults(results:MutableList<ScanResult>) {results.forEach{onScanResult(0,it)}}
@@ -100,9 +84,9 @@ object Esp32BluetoothClient {
         return {try{scanner.stopScan(callback)}catch(_:Exception){}}
     }
     fun connectionToken(hand:SensorHand=SensorHand.RIGHT):Int=synchronized(lock){sessions.getValue(hand).generation}
-    fun connect(context:Context,device:PairedBluetoothDevice,hand:SensorHand=SensorHand.RIGHT)=
+    fun connect(context:Context,device:BleSensorDevice,hand:SensorHand=SensorHand.RIGHT)=
         connectIfCurrent(context,device,connectionToken(hand),hand)
-    fun connectIfCurrent(context:Context,device:PairedBluetoothDevice,expected:Int,hand:SensorHand=SensorHand.RIGHT) {
+    fun connectIfCurrent(context:Context,device:BleSensorDevice,expected:Int,hand:SensorHand=SensorHand.RIGHT) {
         if(!hasBluetoothConnectPermission(context))throw SecurityException("Falta permiso Bluetooth")
         val s=sessions.getValue(hand)
         val done=CountDownLatch(1)
@@ -198,11 +182,6 @@ object Esp32BluetoothClient {
             synchronized(lock){if(s.generation==token){closeLocked(s);s.status="Conexión interrumpida"}}
             Thread.currentThread().interrupt();throw IOException("Conexión interrumpida",e)
         }
-    }
-    /** El firmware de diagnostico anterior tampoco ejecutaba comandos de letras. */
-    @Throws(IOException::class)
-    fun sendCommand(command:Char,hand:SensorHand=SensorHand.RIGHT) {
-        throw IOException("El firmware BLE BMI160 solo transmite sensores; no ejecuta comandos de letras ($command, ${hand.label})")
     }
     private fun closeLocked(s:Session) {
         val g=s.gatt;s.gatt=null;s.connected=false;s.connecting=false

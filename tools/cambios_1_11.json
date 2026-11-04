@@ -1,0 +1,109 @@
+[
+  {
+    "id": "d_nos_vemos_pronto",
+    "cambios": {
+      "validation.stages": {
+        "antes": 5,
+        "despues": 6
+      },
+      "validation.pathTolerance": {
+        "antes": 0.9,
+        "despues": 0.4
+      }
+    }
+  },
+  {
+    "id": "d_nos_vemos_manana",
+    "cambios": {
+      "validation.pathTolerance": {
+        "antes": 0.9,
+        "despues": 0.35
+      }
+    }
+  },
+  {
+    "id": "d_nos_vemos_proxima",
+    "cambios": {
+      "validation.pathTolerance": {
+        "antes": 0.9,
+        "despues": 0.6
+      }
+    }
+  },
+  {
+    "id": "c_color",
+    "nuevo": true
+  },
+  {
+    "id": "c_amarillo",
+    "nuevo": true
+  },
+  {
+    "id": "c_rojo",
+    "nuevo": true
+  },
+  {
+    "id": "c_azul",
+    "nuevo": true
+  },
+  {
+    "id": "c_verde",
+    "nuevo": true
+  },
+  {
+    "id": "c_arananjado",
+    "nuevo": true
+  },
+  {
+    "id": "c_rosa",
+    "nuevo": true
+  },
+  {
+    "id": "c_morado",
+    "nuevo": true
+  },
+  {
+    "id": "c_cafe",
+    "nuevo": true
+  },
+  {
+    "id": "c_negro",
+    "nuevo": true
+  },
+  {
+    "id": "c_blanco",
+    "nuevo": true
+  },
+  {
+    "id": "c_gris",
+    "nuevo": true
+  },
+  {
+    "id": "c_claro",
+    "nuevo": true
+  },
+  {
+    "id": "c_oscuro",
+    "nuevo": true
+  },
+  {
+    "id": "c_brillante",
+    "nuevo": true
+  },
+  {
+    "id": "c_oro",
+    "nuevo": true
+  },
+  {
+    "id": "c_dorado",
+    "nuevo": true
+  },
+  {
+    "id": "c_plata",
+    "nuevo": true
+  },
+  {
+    "id": "c_bronce",
+    "nuevo": true
+  }
+]

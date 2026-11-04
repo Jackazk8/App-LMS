@@ -130,7 +130,8 @@ def main():
     catalog=json.loads((assets/'word_lessons.json').read_text(encoding='utf-8'))
     rows=[row for m in catalog['modules'] for row in m['lessons'] if not args.video or row['video']==args.video]
     if not rows:parser.error('No existe ese video en word_lessons.json')
-    output=assets/'word_references';output.mkdir(exist_ok=True)
+    # Exportación histórica para escritorio; la app ya no consume estos JSON.
+    output=args.project/'tools/historico/word_references';output.mkdir(parents=True,exist_ok=True)
     for row in rows:
         name=row['video'];video=raw/(name+'.mp4')
         cached=args.cache/(name+'.json') if args.cache else None
@@ -154,5 +155,5 @@ def main():
         (fixtures/(name+'.txt')).write_text(str(len(reference['keys']))+'\n'+'\n'.join(map(encode,reference['keys']))+'\n'+str(len(selected))+'\n'+'\n'.join(map(encode,selected))+'\n')
         (fixtures/(name+'.metadata.json')).write_text(json.dumps({'videoSha256':current_hash,'referenceSha256':hashlib.sha256(target.read_bytes()).hexdigest()}))
         print(f"{name}: {len(reference['keys'])} hitos, {reference['quality']['twoHandKeys']} con ambas manos, {reference['startMs']}–{reference['endMs']} ms",flush=True)
-    print('Referencias generadas. Compila la app y prueba aciertos y errores reales; esto no certifica la corrección lingüística de la seña.')
+    print('Referencias históricas de escritorio exportadas. La app genera sus propias referencias al abrir cada palabra; este paso no es necesario para instalarla.')
 if __name__=='__main__':main()

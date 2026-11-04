@@ -1,0 +1,829 @@
+[
+  {
+    "id": "s_hola",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "s_como_estas",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 150,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "s_yo_bien",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.0
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "s_yo_mal",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "s_buenos_dias",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "s_buenas_tardes",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "s_buenas_noches",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": null,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "d_nos_vemos_pronto",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.95,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.95,
+        "despues": 0.4
+      }
+    }
+  },
+  {
+    "id": "d_nos_vemos_manana",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.7,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "d_nos_vemos_proxima",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 160,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.95,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.9,
+        "despues": 0.5
+      }
+    }
+  },
+  {
+    "id": "f_familia",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "tolerance.minMotion": {
+        "antes": 0.08,
+        "despues": 0.04
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.minDisplacement": {
+        "antes": 0.25,
+        "despues": 0.1
+      },
+      "validation.motionNoise": {
+        "antes": 0.07,
+        "despues": 0.03
+      }
+    }
+  },
+  {
+    "id": "f_hombre",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_mujer",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_nino",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.0
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_nina",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_joven",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_companero",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_companera",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_papa",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 0.95
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_mama",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.5,
+        "despues": 0.65
+      }
+    }
+  },
+  {
+    "id": "f_esposo",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.8,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_esposa",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.0,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_novio",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_novia",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.0,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.4,
+        "despues": 0.65
+      }
+    }
+  },
+  {
+    "id": "f_hijo",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.1
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_hija",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_hermano",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.5,
+        "despues": 0.65
+      }
+    }
+  },
+  {
+    "id": "f_hermana",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_abuelo",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_abuela",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.0,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_nieto",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.7,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_nieta",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.0,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_tio",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 1.0,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_tia",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.stages": {
+        "antes": 5,
+        "despues": 3
+      }
+    }
+  },
+  {
+    "id": "f_sobrino",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_sobrina",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_primo",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_prima",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.matchGraceMs": {
+        "antes": 200,
+        "despues": 400
+      },
+      "validation.stages": {
+        "antes": 5,
+        "despues": 3
+      }
+    }
+  },
+  {
+    "id": "f_yerno",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  },
+  {
+    "id": "f_nuera",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.5,
+        "despues": 0.65
+      }
+    }
+  },
+  {
+    "id": "f_cunado",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.5,
+        "despues": 0.65
+      }
+    }
+  },
+  {
+    "id": "f_cunada",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.99,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      },
+      "validation.pathTolerance": {
+        "antes": 0.4,
+        "despues": 0.65
+      }
+    }
+  },
+  {
+    "id": "f_divorciado",
+    "cambios": {
+      "tolerance.endHoldMs": {
+        "antes": 200,
+        "despues": 140
+      },
+      "validation.finalPoseScale": {
+        "antes": 0.9,
+        "despues": 1.15
+      },
+      "validation.finalPositionTolerance": {
+        "antes": null,
+        "despues": 0.85
+      },
+      "validation.matchGraceMs": {
+        "antes": 250,
+        "despues": 400
+      }
+    }
+  }
+]

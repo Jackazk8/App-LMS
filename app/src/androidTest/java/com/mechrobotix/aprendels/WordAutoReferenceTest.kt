@@ -8,6 +8,43 @@ import java.util.concurrent.CancellationException
 
 /** Ejecutar en un teléfono/emulador: incluye decodificador Android, MediaPipe y caché real. */
 class WordAutoReferenceTest {
+    @Test fun phaseProfileIsEnabledOnlyForColors() {
+        val context=InstrumentationRegistry.getInstrumentation().targetContext
+        val modules=WordCatalog.load(context)
+        val colors=modules.single{it.id=="colores"}.lessons
+        assertTrue(colors.isNotEmpty())
+        assertTrue(colors.all{it.validation.phaseValidation && it.validation.stages in 3..4})
+        assertTrue(modules.filter{it.id!="colores"}.flatMap{it.lessons}.none{it.validation.phaseValidation})
+    }
+    @Test fun sameNameReplacementInAllWordModules() {
+        val context=InstrumentationRegistry.getInstrumentation().targetContext
+        val modules=WordCatalog.load(context)
+        val folder=File(context.noBackupFilesDir,"word_references_auto")
+        // Los tres módulos llegan al mismo almacén. Los alias no tocan las cachés del alumno.
+        for((id,firstId,replacementId) in listOf(
+            Triple("saludos_despedidas","s_hola","s_yo_bien"),
+            Triple("familia","f_papa","f_yerno"),
+            Triple("colores","c_color","c_rojo"))) {
+            val module=modules.single{it.id==id}
+            val name="test_replacement_$id"
+            val cache=File(folder,"$name.json")
+            try {
+                val lesson=module.lessons.single{it.id==firstId}.copy(videoName=name)
+                WordReferenceStore.loadOrGenerate(context,lesson)
+                val original=cache.readBytes()
+                WordReferenceStore.loadOrGenerate(context,lesson,onProgress={fail("Regeneró sin cambiar $id")})
+                assertArrayEquals(original,cache.readBytes())
+                var progress=0
+                WordReferenceStore.loadOrGenerate(context,
+                    lesson.copy(video=module.lessons.single{it.id==replacementId}.video),
+                    onProgress={progress++})
+                assertTrue("No detectó el reemplazo en $id",progress>0)
+                assertFalse(original.contentEquals(cache.readBytes()))
+            } finally {
+                listOf(".json",".json.bak",".json.new").forEach{File(folder,name+it).delete()}
+            }
+        }
+    }
     @Test fun cacheReplacementCorruptionAndCancellation() {
         val context=InstrumentationRegistry.getInstrumentation().targetContext
         val folder=File(context.noBackupFilesDir,"word_references_auto")

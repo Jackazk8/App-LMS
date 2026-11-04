@@ -7,6 +7,13 @@ public final class WordStagesCheck {
     static class Clip {
         String name;List<WordPracticeEngine.Frame> frames,keys;
         WordTolerance tolerance=new WordTolerance();WordStageOptions options=new WordStageOptions();
+        long[] closureCuts=new long[0];long closureJump=-1;
+    }
+    static void closureSettings(Clip clip,Path path)throws Exception {
+        if(!Files.exists(path))return;
+        Properties props=new Properties();try(var reader=Files.newBufferedReader(path)){props.load(reader);}
+        clip.closureCuts=Arrays.stream(props.getProperty("cuts").split(",")).mapToLong(Long::parseLong).toArray();
+        clip.closureJump=Long.parseLong(props.getProperty("jump"));
     }
     static void settings(Object target,Path path)throws Exception {
         Properties props=new Properties();try(var reader=Files.newBufferedReader(path)){props.load(reader);}

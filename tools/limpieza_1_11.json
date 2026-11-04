@@ -1,0 +1,68 @@
+[
+  {
+    "archivo": "app/src/main/assets/word_references/d_nos_vemos_pronto.json",
+    "bytes": 8415,
+    "sha256": "45ca8a3cdec1a1ec77d168f6fcf0df067b01ce1cf17b5927ed5e9e19fa9cb0e0",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_buenas_tardes.json",
+    "bytes": 5916,
+    "sha256": "e5353527b93dc6be4ea48d16b83e86dd6ac2a89c80c6e7002d76e234a57489a1",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_buenas_noches.json",
+    "bytes": 5420,
+    "sha256": "7b0602d784a6ff9f34d13aec2e74b1de3efadfdd1bcf74d735a280b138e8d9d3",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_hola.json",
+    "bytes": 2826,
+    "sha256": "aebda9acf9e95f676174df875868602e3eddfc7cde2a030ff76128b7f0736c71",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_buenos_dias.json",
+    "bytes": 4885,
+    "sha256": "436818cd3a1c99ab9123d4938c45e08e60ced65edddcade9db600431d695cff3",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_yo_mal.json",
+    "bytes": 3343,
+    "sha256": "b679c8d183f48c020da9f8e67ab04c8bb514ebf7632af3fe84bd301e6ceb6b84",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_yo_bien.json",
+    "bytes": 3365,
+    "sha256": "c7fa6a42cce8b069d34d978519eb65cf66707388266d793647de98b492ff673d",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/s_como_estas.json",
+    "bytes": 10833,
+    "sha256": "78b5701b26d9fdeb9b727d3119d84a1e76a59153d06d39e4607cf07df5e85b34",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/d_nos_vemos_proxima.json",
+    "bytes": 11855,
+    "sha256": "d004e544d80cd05109fe8006e6c9573b4025fb196c1a6e35954be8cb04961b19",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/assets/word_references/d_nos_vemos_manana.json",
+    "bytes": 5842,
+    "sha256": "99cf1d08d377fbc918ff606ea1136db8af0e62595516980ad0a7b4700e100ce1",
+    "motivo": "Referencia histórica que la app no carga"
+  },
+  {
+    "archivo": "app/src/main/res/raw/hola.mp4",
+    "bytes": 452013,
+    "sha256": "af009e763ab0ca010875edc9d00ff4b92b9bbb3742551d092aa2597d00562dfb",
+    "motivo": "Video sin referencias desde código, catálogo ni layouts"
+  }
+]

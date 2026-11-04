@@ -16,10 +16,10 @@ import java.util.Locale
 import java.util.concurrent.Executors
 
 /** Dos flujos BLE de diagnostico. Crear este panel en onCreate, antes de STARTED.
- * Registra sus propios permisos BLE; se conserva requestPermission por compatibilidad.
+ * Registra sus propios permisos BLE para ambas manos.
  * No aprueba señas ni modifica la camara. */
 @SuppressLint("MissingPermission")
-class Bmi160Panel(private val activity:ComponentActivity,@Suppress("UNUSED_PARAMETER") requestPermission:()->Unit) {
+class Bmi160Panel(private val activity:ComponentActivity) {
     val button=AppUi.style(Button(activity)).apply {
         text="Sensores · izquierda y derecha";textSize=12f
         setOnClickListener{open()}
@@ -72,10 +72,10 @@ class Bmi160Panel(private val activity:ComponentActivity,@Suppress("UNUSED_PARAM
         active=false;main.removeCallbacks(poll);stopDiscovery();chooser?.dismiss();chooser=null
         dialog?.dismiss();dialog=null
         hands.values.forEach{if(!inline) it.readings=null;it.calibration.reset();it.lastSample=null}
-        // Explicit disconnect buttons own the sockets, not an Activity's lifecycle.
+        // Los botones de desconexión controlan las sesiones GATT, no el ciclo de la pantalla.
     }
     fun destroy(){destroyed=true;pause();worker.shutdown()}
-    fun permissionResult(granted:Boolean){
+    private fun permissionResult(granted:Boolean){
         if(granted){
             val hand=pendingHand
             if(active && hand!=null){pendingHand=null;chooseDevice(hand)}
@@ -154,7 +154,7 @@ class Bmi160Panel(private val activity:ComponentActivity,@Suppress("UNUSED_PARAM
             }
         }
         chooser?.dismiss();stopDiscovery()
-        val devices=mutableListOf<PairedBluetoothDevice>()
+        val devices=mutableListOf<BleSensorDevice>()
         val rows=ArrayAdapter<String>(activity,android.R.layout.simple_list_item_1,mutableListOf())
         val prefs=activity.getSharedPreferences("bmi_devices_ble",0)
         val previous=prefs.getString(hand.name,null)

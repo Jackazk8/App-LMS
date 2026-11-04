@@ -36,10 +36,14 @@ object WordCatalog {
                 };t.validate()
                 val validation=WordStageOptions()
                 row.optJSONObject("validation")?.let { o ->
-                    val allowed=setOf("stages","maxFingerMismatches","motionSamples","minDisplacement","motionNoise","poseHoldMs","matchGraceMs","pathTolerance","finalPoseScale","sharedRouteOrigin")
+                    val allowed=setOf("phaseValidation","minMotionMs","phasePositionTolerance","stages","maxFingerMismatches","motionSamples","minDisplacement","motionNoise","poseHoldMs","matchGraceMs","pathTolerance","finalPositionTolerance","finalPoseScale","sharedRouteOrigin")
                     o.keys().forEach{require(it in allowed){"Parámetro validation desconocido en $id: $it"}}
+                    validation.phaseValidation=o.optBoolean("phaseValidation",validation.phaseValidation)
+                    validation.minMotionMs=o.optLong("minMotionMs",validation.minMotionMs)
+                    validation.phasePositionTolerance=o.optDouble("phasePositionTolerance",validation.phasePositionTolerance)
                     validation.sharedRouteOrigin=o.optBoolean("sharedRouteOrigin",validation.sharedRouteOrigin)
                     validation.pathTolerance=o.optDouble("pathTolerance",validation.pathTolerance)
+                    validation.finalPositionTolerance=o.optDouble("finalPositionTolerance",validation.finalPositionTolerance)
                     validation.finalPoseScale=o.optDouble("finalPoseScale",validation.finalPoseScale)
                     validation.stages=o.optInt("stages",validation.stages)
                     validation.maxFingerMismatches=o.optInt("maxFingerMismatches",validation.maxFingerMismatches)

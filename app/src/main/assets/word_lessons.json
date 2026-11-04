@@ -21,7 +21,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -31,8 +31,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -51,7 +52,7 @@
             "minTravelProgress": 0.08,
             "stability": 1.0,
             "startHoldMs": 120,
-            "endHoldMs": 150,
+            "endHoldMs": 140,
             "lostGraceMs": 2500,
             "minAttemptMs": 600
           },
@@ -61,8 +62,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -81,7 +83,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -91,8 +93,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.0
           }
         },
         {
@@ -111,7 +114,7 @@
             "minTravelProgress": 0.3,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -121,8 +124,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -141,7 +145,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -151,8 +155,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -171,7 +176,7 @@
             "minTravelProgress": 0.12,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -181,8 +186,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -201,7 +207,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -211,8 +217,9 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
-            "maxFingerMismatches": 0
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -231,7 +238,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 110,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -241,10 +248,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.95,
-            "finalPoseScale": 0.95
+            "pathTolerance": 0.4,
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -263,20 +270,20 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
           "validation": {
-            "stages": 6,
+            "stages": 5,
             "motionSamples": 2,
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.35,
-            "finalPoseScale": 0.7
+            "finalPoseScale": 1.15
           }
         },
         {
@@ -295,20 +302,20 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 160,
+            "endHoldMs": 110,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
           "validation": {
-            "stages": 6,
+            "stages": 5,
             "motionSamples": 2,
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.9,
-            "finalPoseScale": 0.95
+            "pathTolerance": 0.6,
+            "finalPoseScale": 1.15
           }
         }
       ]
@@ -328,25 +335,25 @@
             "travel": 2.2,
             "travelRelative": 0.45,
             "minMotionRatio": 0.12,
-            "minMotion": 0.08,
+            "minMotion": 0.04,
             "directionCosine": -0.35,
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
           "validation": {
             "stages": 3,
             "motionSamples": 2,
-            "minDisplacement": 0.25,
-            "motionNoise": 0.07,
+            "minDisplacement": 0.1,
+            "motionNoise": 0.03,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.90,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -366,7 +373,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -376,7 +383,7 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.9,
             "finalPoseScale": 0.9,
@@ -399,7 +406,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -409,7 +416,7 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.9,
             "finalPoseScale": 0.9,
@@ -432,7 +439,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -442,10 +449,10 @@
             "minDisplacement": 0.15,
             "motionNoise": 0.03,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
+            "finalPoseScale": 1.0,
             "sharedRouteOrigin": true
           },
           "recoverSparseMotion": true
@@ -466,7 +473,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -476,10 +483,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.9,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -499,7 +506,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -509,10 +516,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.99,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -532,7 +539,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -542,10 +549,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.9,
-            "finalPoseScale": 0.9,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -565,7 +572,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -575,10 +582,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.9,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -598,7 +605,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -608,10 +615,10 @@
             "minDisplacement": 0.1,
             "motionNoise": 0.03,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
+            "finalPoseScale": 0.95,
             "sharedRouteOrigin": true
           },
           "recoverSparseMotion": true
@@ -632,7 +639,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -642,10 +649,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -665,7 +672,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -675,10 +682,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.9,
-            "finalPoseScale": 0.8,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           },
           "recoverSparseMotion": true
@@ -699,7 +706,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -709,10 +716,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 1.0,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -732,7 +739,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -742,11 +749,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -765,7 +773,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -775,11 +783,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.4,
-            "finalPoseScale": 1.0,
-            "sharedRouteOrigin": true
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -798,7 +807,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -808,10 +817,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.8,
-            "finalPoseScale": 0.9,
+            "finalPoseScale": 1.1,
             "sharedRouteOrigin": true
           }
         },
@@ -831,7 +840,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -841,10 +850,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.9,
-            "finalPoseScale": 0.99,
+            "pathTolerance": 0.99,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -864,7 +873,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -874,11 +883,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
-            "sharedRouteOrigin": true
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -897,7 +907,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -907,11 +917,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.7,
-            "finalPoseScale": 0.99,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -930,7 +941,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -940,10 +951,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.99,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -963,7 +974,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -973,10 +984,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.9,
-            "finalPoseScale": 1.0,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -996,7 +1007,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1006,11 +1017,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.8,
-            "finalPoseScale": 0.7,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1029,7 +1041,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 100,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1039,10 +1051,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 600,
             "maxFingerMismatches": 1,
             "pathTolerance": 0.99,
-            "finalPoseScale": 1.0,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -1062,7 +1074,7 @@
             "minTravelProgress": 0.08,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1072,11 +1084,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.8,
-            "finalPoseScale": 1.0,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1095,20 +1108,20 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
           "validation": {
-            "stages": 5,
+            "stages": 3,
             "motionSamples": 2,
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.99,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -1128,7 +1141,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1138,11 +1151,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.8,
-            "finalPoseScale": 0.99,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1161,7 +1175,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1171,11 +1185,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.8,
-            "finalPoseScale": 0.99,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1194,7 +1209,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1204,10 +1219,10 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.99,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -1227,20 +1242,20 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
           "validation": {
-            "stages": 5,
+            "stages": 3,
             "motionSamples": 2,
             "minDisplacement": 0.35,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 200,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.99,
-            "finalPoseScale": 0.99,
+            "finalPoseScale": 1.15,
             "sharedRouteOrigin": true
           }
         },
@@ -1260,7 +1275,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1270,11 +1285,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.7,
-            "finalPoseScale": 0.9,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1293,7 +1309,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1303,11 +1319,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
-            "sharedRouteOrigin": true
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1326,7 +1343,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1336,11 +1353,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
-            "sharedRouteOrigin": true
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1359,7 +1377,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1369,11 +1387,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
-            "pathTolerance": 0.4,
-            "finalPoseScale": 0.99,
-            "sharedRouteOrigin": true
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         },
         {
@@ -1392,7 +1411,7 @@
             "minTravelProgress": 0.18,
             "stability": 0.75,
             "startHoldMs": 120,
-            "endHoldMs": 200,
+            "endHoldMs": 140,
             "lostGraceMs": 2200,
             "minAttemptMs": 600
           },
@@ -1402,11 +1421,12 @@
             "minDisplacement": 0.25,
             "motionNoise": 0.07,
             "poseHoldMs": 100,
-            "matchGraceMs": 250,
+            "matchGraceMs": 400,
             "maxFingerMismatches": 0,
             "pathTolerance": 0.5,
-            "finalPoseScale": 0.9,
-            "sharedRouteOrigin": true
+            "finalPoseScale": 1.15,
+            "sharedRouteOrigin": true,
+            "finalPositionTolerance": 0.85
           }
         }
       ]
@@ -1414,7 +1434,711 @@
     {
       "id": "colores",
       "title": "Colores",
-      "lessons": []
+      "lessons": [
+        {
+          "id": "c_color",
+          "title": "Color",
+          "video": "c_color",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_amarillo",
+          "title": "Amarillo",
+          "video": "c_amarillo",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_rojo",
+          "title": "Rojo",
+          "video": "c_rojo",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_azul",
+          "title": "Azul",
+          "video": "c_azul",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_verde",
+          "title": "Verde",
+          "video": "c_verde",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_arananjado",
+          "title": "Anaranjado",
+          "video": "c_arananjado",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 2,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 200,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_rosa",
+          "title": "Rosa",
+          "video": "c_rosa",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 4,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.90,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.8
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_morado",
+          "title": "Morado",
+          "video": "c_morado",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_cafe",
+          "title": "Café",
+          "video": "c_cafe",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_negro",
+          "title": "Negro",
+          "video": "c_negro",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_blanco",
+          "title": "Blanco",
+          "video": "c_blanco",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 90,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.80,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_gris",
+          "title": "Gris",
+          "video": "c_gris",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_claro",
+          "title": "Claro",
+          "video": "c_claro",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_oscuro",
+          "title": "Oscuro",
+          "video": "c_oscuro",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_brillante",
+          "title": "Brillante",
+          "video": "c_brillante",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_oro",
+          "title": "Oro",
+          "video": "c_oro",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 4,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_dorado",
+          "title": "Dorado",
+          "video": "c_dorado",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.75,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_plata",
+          "title": "Plata",
+          "video": "c_plata",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 4,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        },
+        {
+          "id": "c_bronce",
+          "title": "Bronce",
+          "video": "c_bronce",
+          "tolerance": {
+            "shape": 0.65,
+            "meanFlex": 50,
+            "maxFlex": 100,
+            "travel": 2.2,
+            "travelRelative": 0.45,
+            "minMotionRatio": 0.3,
+            "minMotion": 0.04,
+            "directionCosine": -0.35,
+            "minTravelProgress": 0.18,
+            "stability": 0.2,
+            "startHoldMs": 350,
+            "endHoldMs": 200,
+            "lostGraceMs": 2200,
+            "minAttemptMs": 1100
+          },
+          "validation": {
+            "stages": 3,
+            "motionSamples": 3,
+            "minDisplacement": 0.14,
+            "motionNoise": 0.035,
+            "poseHoldMs": 100,
+            "matchGraceMs": 400,
+            "maxFingerMismatches": 0,
+            "pathTolerance": 0.65,
+            "finalPoseScale": 1.1,
+            "sharedRouteOrigin": true,
+            "phaseValidation": true,
+            "minMotionMs": 250,
+            "phasePositionTolerance": 0.9
+          },
+          "recoverSparseMotion": true
+        }
+      ]
     },
     {
       "id": "numeros",

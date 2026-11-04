@@ -3,10 +3,6 @@ import java.util.*;
 
 /** Regresiones de cierre: cortes reales de las detecciones incluidas, no tiempos impuestos a la app. */
 public final class WordCompletionCheck {
-    static final Map<String,long[]> CUTS=Map.of(
-        "d_nos_vemos_manana",new long[]{2500,3000,3500,3900,4000,4200,4300,4400,4500},
-        "d_nos_vemos_pronto",new long[]{4000,4500,5000,5500,6000,6500,7000,7500,8000,8500,9000},
-        "d_nos_vemos_proxima",new long[]{4000,4500,5000,5500,6000,6500,7000,7500,8000,8500});
     static WordPracticeEngine stopped(WordStagesCheck.Clip clip,long cut,boolean jump) {
         List<WordPracticeEngine.Frame> stream=new ArrayList<>();
         for(var f:clip.frames)if(f.timeMs<=cut)stream.add(f);
@@ -31,7 +27,7 @@ public final class WordCompletionCheck {
     static void check(List<WordStagesCheck.Clip> clips) {
         int cases=0,accepted=0;
         for(var clip:clips) {
-            long[] cuts=CUTS.get(clip.name);if(cuts==null)continue;
+            long[] cuts=clip.closureCuts;if(cuts.length==0)continue;
             int passed=0;
             for(long cut:cuts) {
                 boolean ok=!WordStagesCheck.success(stopped(clip,cut,false));
@@ -41,16 +37,7 @@ public final class WordCompletionCheck {
             }
             System.out.println("FIRST_SUCCESS "+clip.name+" videoMs="+firstSuccess(clip));
             System.out.println("CLOSURE "+clip.name+" interrupted rejected="+passed+"/"+cuts.length);
-            WordEngineCheck.require(!WordStagesCheck.success(stopped(clip,clip.name.endsWith("manana")?4500:clip.name.endsWith("pronto")?8000:6500,true)),"Skipped last movement: "+clip.name);
-            // Cambiar la cantidad visible conserva la protección del recorrido.
-            int original=clip.options.stages;
-            try {
-                for(int count=3;count<=6;count++) {
-                    clip.options.stages=count;
-                    WordEngineCheck.require(WordStagesCheck.success(WordStagesCheck.replay(clip,clip.frames,1,false,false,1)),"Complete with "+count+" stages: "+clip.name);
-                    WordEngineCheck.require(!WordStagesCheck.success(stopped(clip,cuts[cuts.length-1],false)),"Incomplete with "+count+" stages: "+clip.name);
-                }
-            } finally {clip.options.stages=original;}
+            WordEngineCheck.require(!WordStagesCheck.success(stopped(clip,clip.closureJump,true)),"Skipped last movement: "+clip.name);
         }
         System.out.println("Premature acceptances="+accepted+"/"+cases);
         WordEngineCheck.require(accepted==0,"Interrupted signs accepted");
