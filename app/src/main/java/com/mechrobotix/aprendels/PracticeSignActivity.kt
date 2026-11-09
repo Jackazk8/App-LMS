@@ -132,7 +132,8 @@ class PracticeSignActivity : ComponentActivity() {
         binding=ActivityPracticeSignBinding.inflate(layoutInflater)
         setContentView(binding.root)
         if(lessons.isEmpty()) { finish();return }
-        AppUi.styleButtons(binding.root)
+        Tutorial.letterPracticeTip(this)
+        AppUi.styleButtons(binding.root);Fonts.apply(binding.root)
         binding.motionOverlayView.scaleX=1.30f;binding.motionOverlayView.scaleY=1.30f
         binding.referenceTap.setOnClickListener {
             val lesson=lessons[lessonIndex]

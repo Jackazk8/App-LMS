@@ -68,6 +68,8 @@ class WordPracticeActivity:ComponentActivity() {
         super.onCreate(savedInstanceState)
         b=ActivityWordPracticeBinding.inflate(layoutInflater);setContentView(b.root);AppUi.insets(b.root)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        Tutorial.wordPracticeTip(this)
+        Fonts.apply(b.root)
         b.wordCamera.scaleType=PreviewView.ScaleType.FIT_CENTER
         b.wordCamera.implementationMode=PreviewView.ImplementationMode.COMPATIBLE
         // No ampliar 1.30: las palabras necesitan ver ambos brazos completos.

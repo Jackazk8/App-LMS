@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_dark">#0B2545</color>
-    <color name="brand">#1565C0</color>
-    <color name="brand_light">#EAF3FF</color>
-    <color name="accent">#00A896</color>
+    <!-- Base -->
+    <color name="brand_dark">#1E1B4B</color>
+    <color name="brand">#6045F6</color>
+    <color name="brand_light">#EEEAFF</color>
+    <color name="accent">#14B8A6</color>
 
-    <color name="background">#F4F7FB</color>
+    <color name="background">#F6F5FF</color>
     <color name="surface">#FFFFFF</color>
 
-    <color name="text_dark">#172033</color>
-    <color name="text_muted">#6B7280</color>
+    <color name="text_dark">#14123A</color>
+    <color name="text_muted">#6E6C93</color>
     <color name="white">#FFFFFF</color>
-    <color name="disabled">#B8C2CC</color>
+    <color name="disabled">#C4C2D9</color>
+
+    <!-- Rediseño -->
+    <color name="brand_gradient_end">#3B82F6</color>
+    <color name="card_stroke">#E6E3FA</color>
+    <color name="hero_subtitle">#E3DEFF</color>
+    <color name="hero_start">#1E1B4B</color>
+    <color name="hero_mid">#4338CA</color>
+    <color name="hero_end">#9333EA</color>
+
+    <!-- Degradados de cada módulo: inicio y fin -->
+    <color name="mod_alpha_a">#4338CA</color>
+    <color name="mod_alpha_b">#3B82F6</color>
+    <color name="mod_greet_a">#047857</color>
+    <color name="mod_greet_b">#14B8A6</color>
+    <color name="mod_family_a">#DB2777</color>
+    <color name="mod_family_b">#9333EA</color>
+    <color name="mod_colors_a">#E2570C</color>
+    <color name="mod_colors_b">#F59E0B</color>
+    <color name="mod_numbers_a">#1D4ED8</color>
+    <color name="mod_numbers_b">#06B6D4</color>
+    <color name="mod_default_a">#7C3AED</color>
+    <color name="mod_default_b">#DB2777</color>
+    <color name="mod_locked_a">#8B89A8</color>
+    <color name="mod_locked_b">#B3B1CC</color>
 </resources>

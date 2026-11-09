@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:fillViewport="true" android:background="@color/background">
-    <LinearLayout android:id="@+id/moduleList" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="¿Qué quieres practicar?" android:textSize="24sp" android:textStyle="bold"
-            android:textColor="@color/text_dark" android:layout_marginBottom="8dp" />
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Aprende a tu ritmo, un tema a la vez." android:textSize="15sp"
-            android:textColor="@color/text_muted" android:layout_marginBottom="20dp" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/moduleList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_icon_button"
+            android:clickable="true"
+            android:contentDescription="Regresar"
+            android:elevation="2dp"
+            android:focusable="true"
+            android:padding="13dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/brand" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="¿Qué quieres\npracticar?"
+            android:textColor="@color/text_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="Aprende a tu ritmo, un tema a la vez."
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
     </LinearLayout>
 </ScrollView>

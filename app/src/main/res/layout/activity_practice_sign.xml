@@ -63,7 +63,7 @@
         android:paddingTop="8dp"
         android:paddingEnd="12dp"
         android:paddingBottom="6dp"
-        android:background="#EE000000"
+        android:background="@drawable/bg_panel_top"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -85,12 +85,11 @@
             android:id="@+id/progressBarMatch"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:layout_marginTop="4dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="6dp"
             android:max="100"
             android:progress="0"
-            android:progressTint="#42A5F5"
-            android:progressBackgroundTint="#55FFFFFF" />
+            android:progressDrawable="@drawable/bg_progress" />
 
         <TextView
             android:id="@+id/tvMotionStage"
@@ -206,7 +205,7 @@
                     android:layout_height="34dp"
                     android:max="45"
                     android:progress="13"
-                    android:progressTint="#42A5F5"
+                    android:progressTint="#2EE6C5"
                     android:progressBackgroundTint="#55FFFFFF"
                     android:thumbTint="#90CAF9"
                     android:contentDescription="Ancho de la guía" />
@@ -225,7 +224,7 @@
                     android:layout_height="34dp"
                     android:max="100"
                     android:progress="28"
-                    android:progressTint="#42A5F5"
+                    android:progressTint="#2EE6C5"
                     android:progressBackgroundTint="#55FFFFFF"
                     android:thumbTint="#90CAF9"
                     android:contentDescription="Posición horizontal: izquierda a derecha" />
@@ -244,7 +243,7 @@
                     android:layout_height="34dp"
                     android:max="100"
                     android:progress="38"
-                    android:progressTint="#42A5F5"
+                    android:progressTint="#2EE6C5"
                     android:progressBackgroundTint="#55FFFFFF"
                     android:thumbTint="#90CAF9"
                     android:contentDescription="Posición vertical: arriba a abajo" />
@@ -263,7 +262,7 @@
                     android:layout_height="34dp"
                     android:max="360"
                     android:progress="180"
-                    android:progressTint="#42A5F5"
+                    android:progressTint="#2EE6C5"
                     android:progressBackgroundTint="#55FFFFFF"
                     android:thumbTint="#90CAF9"
                     android:contentDescription="Rotación entre menos 180 y 180 grados" />
@@ -352,7 +351,7 @@
         android:paddingTop="9dp"
         android:paddingEnd="12dp"
         android:paddingBottom="9dp"
-        android:background="#B8000000"
+        android:background="@drawable/bg_status_pill"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
         android:gravity="center"
@@ -372,7 +371,7 @@
         android:paddingTop="8dp"
         android:paddingEnd="10dp"
         android:paddingBottom="8dp"
-        android:background="#EE000000"
+        android:background="@drawable/bg_panel_bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
